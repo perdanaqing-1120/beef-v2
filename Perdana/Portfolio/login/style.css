@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #020024;
+    color: white;
+    background: url('/Perdana/Portfolio/assets/image/images/ningyu-tb49PTdW1ZM-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 3px -76px 76px -17px rgba(0,0,0,1) inset;
+    -webkit-box-shadow: 3px -76px 76px -17px rgba(0,0,0,1) inset;
+    -moz-box-shadow: 3px -76px 76px -17px rgba(0,0,0,1) inset;
+}
+
+ .container {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    width: 420px;
+    border-radius: 10px;
+    padding: 40px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.75);
+}
+
+ .container h1 {
+    text-align: center;
+    margin: 20px;
+    font-size: 2.5em;
+}
+
+ .input-text input {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    padding: 10px;
+    background: transparent;
+    color: #020024;
+}
+
+.checkbox input {
+    margin: 20px;
+}
+
+.checkbox a {
+    color: white
+}
+
+.login-btn button{
+    background-color: white;
+    border: 2px solid rgba(255, 255, 255, .2);
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px 0px;
+
+}
+
+.login-btn button:active {
+    transform: scale(1.02);
+}
+
+.container button {
+    height: 40px;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.register {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.register a {
+    color: white;
+    font-weight: bold;
+}

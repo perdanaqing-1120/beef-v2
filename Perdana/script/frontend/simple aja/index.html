@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cuy university sesi 6</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cuy University</h1>
+        <p>Selamat datang di Cuy University</p>
+
+        <nav class="navbar">
+            <div>
+                <a href="/index.html">Home</a>
+                <a id="darkMode" onclick="darkMode()" >Mode</a>
+                <a onclick="reload()">Reload</a>
+            </div>
+            <h4 id="info"></h4>
+        </nav>
+    </div>
+
+    <!-- script -->
+    <script>
+        let body = document.body;
+        let info = document.getElementById("info");
+
+        const maksDarkMode = 2;
+        let darkModeCount = 0;
+
+        function darkMode() {
+            if(darkModeCount == maksDarkMode) {
+                alert("anda sudah mencapai batas pergantian mode, yaitu sebanyak " + darkModeCount + " kali, Berlangganan untuk mengganti mode sepuasnya.");
+                alert("kikir banget jir wkwkwk");
+                // return;
+            } else {
+                darkModeCount += 1;
+                let darkRemainingLeft = maksDarkMode - darkModeCount;
+                body.classList.toggle("dark-mode");
+            }
+
+            if(darkModeCount == maksDarkMode) {
+                info.textContent = `Anda telah kehabisan jatah pergantian mode sebanyak ${darkModeCount}x`
+                return;
+            }
+            info.textContent = `Anda telah mengganti mode sebanyak ${darkModeCount}`
+        }
+
+        function reload() {
+            location.reload();
+            alert("halaman di muat ulang");
+        }
+
+    </script>
+</body>
+</html>

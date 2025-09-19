@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <title>password GenDeaThor</title>
+</head>
+<body class="bg-secondary-subtle">
+    <div class="container d-flex justify-content-center align-items-center min-vh-100" id="root">
+        <div class="bg-primary text-white p-5 rounded d-flex flex-column shadow-lg border border-1 border-white">
+            <h1>password generator</h1>
+            <div>
+                <label for="password" class="fw-bold text-uppercase">panjang password</label>
+                <input type="number" id="panjang password" class="form-control mb-3">
+                <label for="password" class="fw-bold text-uppercase">password</label>
+                <input type="text" id="password" class="form-control mb-3 form-control-lg" readonly>
+                <button id="generate" onclick="generate()" class="btn btn-light text-primary fw-bold text-uppercase">generate password</button>
+                <button id="save" onclick="save()" class="btn btn-light text-primary fw-bold text-uppercase" >save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

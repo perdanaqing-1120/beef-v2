@@ -1,0 +1,19 @@
+{
+  "name": "sesi-7",
+  "version": "1.0.0",
+  "description": "sesi 7 cuyuniversity backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "bebas",
+    "aja"
+  ],
+  "author": "Perdana",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.22",
+    "rupiah-format": "^1.0.0"
+  }
+}

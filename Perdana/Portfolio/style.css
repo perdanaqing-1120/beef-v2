@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-btn:hover {
+    text-decoration: underline;
+}
+
+.nav-btn:active {
+    color: white;
+}
+
+.bg-img {
+    background-image: url('assets/image/images/ningyu-tb49PTdW1ZM-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    box-shadow: 3px -76px 76px -17px rgba(0,0,0,1) inset;
+    -webkit-box-shadow: 3px -76px 76px -17px rgba(0,0,0,1) inset;
+    -moz-box-shadow: 3px -76px 76px -17px rgba(0,0,0,1) inset;
+}
+
+
+/* Header */
+
+header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header-btn a {
+    margin: 0px 10px;
+    transition: 0.2s ease;
+}
+
+.header-btn a:hover {
+    filter: blur(0px);
+}
+
+.login-btn {
+    background-color: #333;
+    width: 100px;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: #333 solid 2px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+    /* animation: denyut 4s  ease-in infinite; */
+    /* filter: blur(1px); */
+}
+
+    .login-btn:hover {
+    color: #333;
+    background-color: white;
+}
+
+@media (max-width: 700px) {
+    .header-btn {
+        display: none;
+    }
+}
+
+@keyframes denyut {
+    0% { padding: 5px; }
+
+    20% { padding: 10px;}
+
+    50% { padding: 10px;}
+
+    55% { padding: 2px;}
+
+    60% { padding: 5px;}
+}
+/* header end */
+
+/* menu hover */
+
+.menu-left {
+    background-color: #333;
+    height: 100vh;
+    width: 20vh;
+    position: fixed;
+    left: -200px;
+    top: 0;
+    transition: 0.7s ease-in-out;
+    opacity: 0;
+}
+
+.menu-left:hover{
+    left: 0px;
+    opacity: 1;
+}
+
+.name-menu {
+    margin: 5px 5px;
+    display: flex;
+    justify-content: center;
+} 
+
+.list-menu-a {
+    display: flex;
+    justify-content: start;
+    margin: 20px 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.list-menu-a:hover{
+    text-decoration: underline;
+}
+
+/* menu hover end  */
+
+.pembukaan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: black;
+}
+
+.pemisah {
+    border: 5px white;
+    height: 50vh;
+    width: 100%;
+    padding: 10px;
+    /* background-color: black; */
+}
+
+.pemisah h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scroll ease 1.3s forwards;
+    
+}
+
+.pemisah p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: scroll ease 2s forwards;
+    font-size: 1.3em;
+    padding: 0px 30%;
+}
+
+@keyframes scroll {
+    from {opacity: 0; transform: translateY(20px);}
+
+    to {opacity: 1; transform: translateY(-20px);}
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    height: 100dvh;
+    padding: 2%;
+}
+    
+.div1 {
+    grid-row: span 4 / span 4;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.div2 {
+    grid-column: span 3 / span 3;
+    grid-row: span 4 / span 4;
+    background-color: #333;
+    border-radius: 10px;
+    background: #000000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(51, 51, 51, 1) 100%);
+}
+
+.div2:hover {
+    animation: zoom ease 1s forwards;
+}
+
+.div2:active {
+    border: white solid 2px;
+}
+
+.div3 {
+    grid-row: span 4 / span 4;
+    grid-column-start: 5;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.div4 {
+    grid-column: span 5 / span 5;
+    grid-row-start: 5;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+@keyframes zoom {
+    from {background-size: cover;}
+
+    to {background-size: 300%;}
+}
