@@ -45,20 +45,38 @@ body {
     padding: 20px;
 }
 
-button {
+.simbol {
     padding: 20px;
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    background-color: #c96523;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
     background-color: #fe7f2d;
+    cursor: pointer;
+    transition: background-color 0.1s;
 }
 
-button:active {
-    background-color: #d35400;
+.simbol:hover {
+    background-color: #c96523;
+}
+
+.simbol:active {
+    background-color: #f7863b;
+}
+
+.angka {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.angka:hover {
+    background-color: #8f8e8e;
+}
+
+.angka:active {
+    background-color: #fff;
 }
